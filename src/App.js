@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactDOM from 'react-dom';
-
+import Hello from './components/hello';
 
 ReactDOM.render(
-  <div>Laravelとねころっけくん5.8</div>,
+  <Hello greet='Good Morning'/>,
   document.getElementById('root')
 );
