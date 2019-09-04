@@ -1,9 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Hello from './components/hello';
+import React, {Component} from 'react';
 
+class Greeting extends Component {
+  constructor() {
+    super();
+    this.state = {
+      time: false
+    };
+  }
 
-ReactDOM.render(
-  <Hello>Hello, Good Morning.</Hello>,
-  document.getElementById('root')
-);
+  render() {
+    return (
+      <p>
+        {this.state.time ? 'Good Morning' : 'Good Afternoon'}
+      </p>
+    )
+  }
+}
+
+export default Greeting;
