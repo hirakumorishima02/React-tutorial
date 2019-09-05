@@ -1,4 +1,4 @@
-import Module from './components/module';
+import Module from './components/module.txt';
 
 const root = document.querySelector('#root');
 

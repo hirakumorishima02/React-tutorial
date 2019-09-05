@@ -86,15 +86,15 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/components/module.js":
-/*!**********************************!*\
-  !*** ./src/components/module.js ***!
-  \**********************************/
+/***/ "./src/components/module.txt":
+/*!***********************************!*\
+  !*** ./src/components/module.txt ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst text = '<p>Good Morning Sunshine！！！</p>';\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (text);\n\n//# sourceURL=webpack:///./src/components/module.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"const text = '<p>Good Morning Sunshine！！！</p>';\\n\\nexport default text;\");\n\n//# sourceURL=webpack:///./src/components/module.txt?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst text = '<p>Good Morning
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/module */ \"./src/components/module.js\");\n\n\nconst root = document.querySelector('#root');\n\nroot.innerHTML = _components_module__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_module_txt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/module.txt */ \"./src/components/module.txt\");\n\n\nconst root = document.querySelector('#root');\n\nroot.innerHTML = _components_module_txt__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
