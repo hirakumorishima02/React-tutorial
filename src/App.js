@@ -1,8 +1,28 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './components/hello';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {title:''};
+  }
+
+  componentDidMount() {
+    this.setState({title:'Laravelとねころっけくん5.8'})
+  }
+
+  render() {
+    return (
+      <div>
+        <h2>{this.state.title}</h2>
+      </div>
+    );
+  }
+}
 
 ReactDOM.render(
-  <Hello greet='Good Morning'/>,
+  <App />,
   document.getElementById('root')
 );
+
+export default App;
