@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "babel": "babel src/index.js -o compiled.js"
+    "babel": "babel src/index.js -o compiled.js",
+    "webpack": "webpack"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +33,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   }
 }
