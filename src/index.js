@@ -1,5 +1,22 @@
-import Module from './components/module.txt';
+function component() {
+    const element = document.createElement('div');
+    const btn = document.createElement('button');
+    const myAlert = require('./components/myAlert').default;
 
-const root = document.querySelector('#root');
+    btn.innerHTML = 'Click me';
+    btn.onclick = myAlert;
 
-root.innerHTML = Module;
+    element.appendChild(btn);
+    return element;
+}
+
+let element = component();
+document.body.appendChild(element);
+
+if (module.hot) {
+    module.hot.accept('./components/myAlert.js', () => {
+
+        element = component();
+        document.body.appendChild(element);
+    })
+}
