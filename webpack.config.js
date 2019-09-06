@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //追記
 
 module.exports = {
     watch: true,
@@ -15,15 +16,22 @@ module.exports = {
                 use: 'raw-loader'
             },
             {
-                test: /\.js$/,
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env', 'react']
-                    }
-                },
-                exclude: /node_modules/
-            }
+                  loader: 'babel-loader',
+                  options: {
+                    presets: ['@babel/preset-env']
+                  }
+                }
+              }
         ]
-    }
+    },
+    plugins: [
+        // プラグインの設定追加
+        new HtmlWebpackPlugin({
+            title: 'Plugin generate page',
+            template: 'src/root.html'
+        })
+    ]
 };

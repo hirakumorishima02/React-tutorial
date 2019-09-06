@@ -86,27 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/components/module.txt":
-/*!***********************************!*\
-  !*** ./src/components/module.txt ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"const text = '<p>Good Morning Sunshine！！！</p>';\\n\\nexport default text;\");\n\n//# sourceURL=webpack:///./src/components/module.txt?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_module_txt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/module.txt */ \"./src/components/module.txt\");\n\n\nconst root = document.querySelector('#root');\n\nroot.innerHTML = _components_module_txt__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: Cannot find module 'babel-preset-env' from '/Users/morishimahiraku/my-app'\\n- Did you mean \\\"@babel/env\\\"?\\n    at Function.module.exports [as sync] (/Users/morishimahiraku/my-app/node_modules/resolve/lib/sync.js:74:15)\\n    at resolveStandardizedName (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/files/plugins.js:101:31)\\n    at resolvePreset (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/files/plugins.js:58:10)\\n    at loadPreset (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/files/plugins.js:77:20)\\n    at createDescriptor (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-descriptors.js:154:9)\\n    at items.map (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-descriptors.js:109:50)\\n    at Array.map (<anonymous>)\\n    at createDescriptors (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-descriptors.js:109:29)\\n    at createPresetDescriptors (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-descriptors.js:101:10)\\n    at presets (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-descriptors.js:47:19)\\n    at mergeChainOpts (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-chain.js:320:26)\\n    at /Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-chain.js:283:7\\n    at buildRootChain (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/config-chain.js:120:22)\\n    at loadPrivatePartialConfig (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/partial.js:85:55)\\n    at Object.loadPartialConfig (/Users/morishimahiraku/my-app/node_modules/@babel/core/lib/config/partial.js:110:18)\\n    at Object.<anonymous> (/Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:144:26)\\n    at Generator.next (<anonymous>)\\n    at asyncGeneratorStep (/Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:3:103)\\n    at _next (/Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:5:194)\\n    at /Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:5:364\\n    at new Promise (<anonymous>)\\n    at Object.<anonymous> (/Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:5:97)\\n    at Object._loader (/Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:224:18)\\n    at Object.loader (/Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:60:18)\\n    at Object.<anonymous> (/Users/morishimahiraku/my-app/node_modules/babel-loader/lib/index.js:55:12)\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
