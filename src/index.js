@@ -1,22 +1,32 @@
-function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
-    const myAlert = require('./components/myAlert').default;
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import Hello from './components/hello';
 
-    btn.innerHTML = 'Click me';
-    btn.onclick = myAlert;
-
-    element.appendChild(btn);
-    return element;
+class App extends Component {
+    constructor() {
+        super();
+        this.handleChange = this.handleChange.bind(this);
+        this.state = {
+            flag: false
+        }
+    }
+    handleChange() {
+        this.setState({
+            flag: !this.state.flag
+        })
+    }
+    render() {
+        return (
+            <div>
+                <button onClick={this.handleChange}>Switch Flag</button>
+                {`${this.state.flag}`}
+                <Hello/>
+            </div>
+        )
+    }
 }
 
-let element = component();
-document.body.appendChild(element);
-
-if (module.hot) {
-    module.hot.accept('./components/myAlert.js', () => {
-
-        element = component();
-        document.body.appendChild(element);
-    })
-}
+render(
+    <App />,
+    document.querySelector('#root')
+);
